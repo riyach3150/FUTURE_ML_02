@@ -4,10 +4,10 @@
   * Customer support teams receive thousands of tickets daily.  
   * Manually categorizing and prioritizing tickets increases response time and operational cost.
 
-  This project builds an ML-based NLP system that automatically:
+    This project builds an ML-based NLP system that automatically:
   - Classifies support tickets into categories
   - Predicts ticket priority (High / Medium / Low)
-  This helps reduce backlog and improve customer satisfaction.
+   This helps reduce backlog and improve customer satisfaction.
 
 ---
 
@@ -43,10 +43,10 @@
 - Stopword removal using NLTK
 
 ### 2️⃣ Feature Extraction
-TF-IDF (Term Frequency - Inverse Document Frequency) was used to convert text into numerical vectors.
+ TF-IDF (Term Frequency - Inverse Document Frequency) was used to convert text into numerical vectors.
 
 ### 3️⃣ Model Training
-Two Logistic Regression models were trained:
+ Two Logistic Regression models were trained:
 
 - Model 1 → Ticket Category Classification
 - Model 2 → Priority Prediction
@@ -65,9 +65,7 @@ Two Logistic Regression models were trained:
 - The model successfully learned patterns from ticket text.
 - High priority tickets were identified based on urgency-related keywords.
 - Category classification showed strong performance across major ticket types.
--The confusion matrix below shows how well the model classifies support tickets.
-
-[![Confusion Matrix](confusion_matrix.png)](confusion_matrix.png)
+- The confusion matrices for category and priority prediction compare the model’s actual vs predicted labels.
 
 ---
 
@@ -92,6 +90,8 @@ Priority: High
 support-ticket-classification-ml/
 │
 ├── Support_Ticket_Classification.ipynb
+├── Confusion_Matrix_CP.png
+├── Confusion_Matrix_PP.png
 ├── customer_support_tickets.csv
 ├── README.md
 └── requirements.txt
